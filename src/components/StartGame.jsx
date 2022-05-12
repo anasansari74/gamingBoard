@@ -7,7 +7,15 @@ const StartGameForm = styled.form`
 
   .form-input,
   .form-btn {
+    display: grid;
+    place-items: center;
+
+    height: 2rem;
     padding: 0.5rem;
+  }
+
+  .form-input {
+    align-self: flex-end;
   }
 `;
 

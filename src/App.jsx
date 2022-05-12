@@ -9,17 +9,16 @@ const GameAreaDiv = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
 
-  grid-gap: 1rem;
+  grid-gap: 5rem;
 `;
 
 function App() {
   const [moves, setMoves] = useState("");
-  console.log(moves);
 
   return (
     <div className="App">
       <GameAreaDiv>
-        <Board />
+        <Board moves={moves} />
         <StartGame moves={moves} setMoves={setMoves} />
       </GameAreaDiv>
     </div>

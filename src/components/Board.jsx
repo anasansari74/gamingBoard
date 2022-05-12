@@ -17,11 +17,11 @@ const BoardDiv = styled.div`
   }
 `;
 
-export default function Board() {
+export default function Board({ moves }) {
   return (
     <BoardDiv>
       <LeftSide />
-      <Hero />
+      <Hero moves={moves} />
       <Bottom />
       <div className="empty"></div>
     </BoardDiv>
